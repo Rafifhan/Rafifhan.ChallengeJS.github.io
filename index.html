@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge JavaScript</title>
+</head>
+<body bgcolor="#78C1F3">
+<center>
+    <h2>Penjumlahan Pengurangan & Perkalian</h2>
+    <form name="entry">
+    <!-- INPUT NOMOR-->
+        <p>Masukan Nomor : <input type="text" name="t1"></p>
+        <p>Masukan Nomor : <input type="text" name="t2"></p>
+
+        <p>Hasil : <input type="text" name="hasil"></p>
+    <!-- INPUT NOMOR END-->
+
+    <!-- TOMBOL PENCET-->
+    <p><input type="button" value="Tambah" onclick="Javascript:sum()"></p>
+    <p><input type="button" value="Kurang" onclick="Javascript:sub()"></p>
+    <p><input type="button" value="Kali" onclick="Javascript:mul()"></p>
+    <!-- TOMBOL PENCET END-->
+
+    </form>
+    <script language="Javascript">
+        function sum()
+        {
+            var a,b,c
+            a=parseInt(entry.t1.value)
+            b=parseInt(entry.t2.value)
+            c=a+b
+            entry.hasil.value=c
+        }
+        function sub()
+        {
+            var a,b,c
+            a=parseInt(entry.t1.value)
+            b=parseInt(entry.t2.value)
+            c=a-b
+            entry.hasil.value=c
+        }
+        function mul()
+        {
+            var a,b,c
+            a=parseInt(entry.t1.value)
+            b=parseInt(entry.t2.value)
+            c=a*b
+            entry.hasil.value=c
+        }
+    </script>
+
+</center>
+</body>
+</html>
